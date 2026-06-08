@@ -1,0 +1,13 @@
+.env
+*.json
+!examples/*.example
+!examples/*.json.example
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+*.db
+admin_chat_id.txt
+личная-информация/
+credentials/

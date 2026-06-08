@@ -1,0 +1,15 @@
+[Unit]
+Description=ServerConsoleBot (Telegram)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/ServerConsoleBot
+EnvironmentFile=/root/ServerConsoleBot/.env
+ExecStart=/usr/bin/python3 -u /root/ServerConsoleBot/bot.py
+Restart=on-failure
+RestartSec=8
+
+[Install]
+WantedBy=multi-user.target
